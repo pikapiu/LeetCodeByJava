@@ -1,4 +1,4 @@
-# Leetcode上的一些算法题
+# LeetCode上的一些算法题
 
 > 使用Java作为解题语言
 
@@ -11,7 +11,7 @@
 
 
 
-[Two Sum]: https://github.com/pikapiu/LeetcodeByJava/blob/master/note/simple/two-num.md
+[Two Sum]: https://github.com/pikapiu/LeetCodeByJava/blob/master/note/simple/two-num.md
 
-# LeetcodeByJava
+# LeetCodeByJava
 
