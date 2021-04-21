@@ -16,13 +16,12 @@ public class BubbleSort {
         getRandom(99,1);
     }
 
-
-
     private static void swap(int i, int j, int[] arr) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
 
     private static void getRandom(int min, int max){
         int range = max - min + 1;

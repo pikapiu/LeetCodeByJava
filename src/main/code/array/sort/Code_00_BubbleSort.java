@@ -49,6 +49,7 @@ public class Code_00_BubbleSort {
 		return res;
 	}
 
+
 	// for test
 	public static boolean isEqual(int[] arr1, int[] arr2) {
 		if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
@@ -68,6 +69,7 @@ public class Code_00_BubbleSort {
 		return true;
 	}
 
+
 	// for test
 	public static void printArray(int[] arr) {
 		if (arr == null) {
@@ -78,6 +80,8 @@ public class Code_00_BubbleSort {
 		}
 		System.out.println();
 	}
+
+
 
 	// for test
 	public static void main(String[] args) {
@@ -98,9 +102,22 @@ public class Code_00_BubbleSort {
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 
 		int[] arr = generateRandomArray(maxSize, maxValue);
-		printArray(arr);
+//		printArray(arr);
 		bubbleSort(arr);
 		printArray(arr);
+		reverseArr(arr);
+		printArray(arr);
+		
+	}
+	
+	public static int[] reverseArr(int[] arr){
+		int temp;
+		for (int i = 0; i < arr.length; i++) {
+			temp = arr[i];
+			arr[i] = arr[arr.length - i - 1];
+			arr[arr.length - i - 1] = temp;
+		}
+		return arr;
 	}
 
 }
